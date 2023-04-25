@@ -97,6 +97,13 @@ namespace Chess
                         pawn = "";
                     }
                 }
+                else if (controls[i] != null)
+                {
+                    if (controls[i].BackgroundImage != null && i == 0)
+                    {
+                        break;
+                    }
+                }
             }
             return pawn;
         }

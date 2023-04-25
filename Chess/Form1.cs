@@ -21,16 +21,16 @@ namespace Chess
 
         private void btnMove_Click(object sender, EventArgs e)
         {
-            Char[] aToH = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
+            Char[] aToH = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
             if (aToH.Contains(txtMove.Text[0]))
             {
-                
+
                 string[] potential = Pawn.movement(txtMove.Text);
                 Control[] spots = new Control[potential.Length];
-                for(int i = 0; i < potential.Length; i++)
+                for (int i = 0; i < potential.Length; i++)
                 {
                     var tmp = this.Controls.Find(potential[i], true);
-                    if(tmp.Length != 0)
+                    if (tmp.Length != 0)
                     {
                         spots[i] = tmp[0];
                     }
@@ -42,10 +42,10 @@ namespace Chess
 
                 var moveTo = this.Controls.Find(txtMove.Text, true);
                 string pawn = Pawn.findControl(spots, moveTo[0]);
-                if(pawn != "")
+                if (pawn != "")
                 {
                     var moveFrom = this.Controls.Find(pawn, true);
-                    if (Game.turn%2 == 1)
+                    if (Game.turn % 2 == 1)
                     {
                         moveTo[0].BackgroundImage = Resources.whitePawn;
                         moveTo[0].Tag = "white pawn";
@@ -59,7 +59,7 @@ namespace Chess
                     moveFrom[0].Tag = null;
                     Game.turn++;
                 }
-                
+
             }
             else if (txtMove.Text[0] == 'K' && aToH.Contains(txtMove.Text[1]))
             {
@@ -99,9 +99,48 @@ namespace Chess
                     Game.turn++;
                 }
             }
+            else if (txtMove.Text[0] == 'B' && aToH.Contains(txtMove.Text[1]))
+            {
+                Console.WriteLine("Bishop");
+                string space = txtMove.Text[1] + txtMove.Text[2].ToString();
+                string[] potential = Bishop.movement(space);
+                Control[] spots = new Control[potential.Length];
+                for (int i = 0; i < potential.Length; i++)
+                {
+                    var tmp = this.Controls.Find(potential[i], true);
+                    if (tmp.Length != 0)
+                    {
+                        spots[i] = tmp[0];
+                    }
+                    else
+                    {
+                        spots[i] = null;
+                    }
+                }
 
+                var moveToB = this.Controls.Find(space, true);
+                string bishop = Bishop.findControl(spots, moveToB[0]);
+                if (bishop != "")
+                {
+                    var moveFrom = this.Controls.Find(bishop, true);
+                    if (Game.turn % 2 == 1)
+                    {
+                        moveToB[0].BackgroundImage = Resources.whiteBishop;
+                        moveToB[0].Tag = "white bishop";
+                    }
+                    else
+                    {
+                        moveToB[0].BackgroundImage = Resources.blackBishop;
+                        moveToB[0].Tag = "black bishop";
+                    }
+                    moveFrom[0].BackgroundImage = null;
+                    moveFrom[0].Tag = null;
+                    Game.turn++;
+                }
+            }
+            }
+        }
             
 
-        }
     }
-}
+
