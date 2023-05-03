@@ -181,7 +181,7 @@
             // 
             // d8
             // 
-            this.d8.BackColor = System.Drawing.Color.Transparent;
+            this.d8.BackColor = System.Drawing.Color.DimGray;
             this.d8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("d8.BackgroundImage")));
             this.d8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.d8.Location = new System.Drawing.Point(409, 4);
@@ -193,7 +193,7 @@
             // 
             // d1
             // 
-            this.d1.BackColor = System.Drawing.Color.Transparent;
+            this.d1.BackColor = System.Drawing.Color.White;
             this.d1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("d1.BackgroundImage")));
             this.d1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.d1.Location = new System.Drawing.Point(409, 872);
@@ -205,7 +205,7 @@
             // 
             // e8
             // 
-            this.e8.BackColor = System.Drawing.Color.Transparent;
+            this.e8.BackColor = System.Drawing.Color.White;
             this.e8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("e8.BackgroundImage")));
             this.e8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.e8.Location = new System.Drawing.Point(544, 4);
@@ -217,7 +217,7 @@
             // 
             // e1
             // 
-            this.e1.BackColor = System.Drawing.Color.Transparent;
+            this.e1.BackColor = System.Drawing.Color.DimGray;
             this.e1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("e1.BackgroundImage")));
             this.e1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.e1.Location = new System.Drawing.Point(544, 872);
@@ -321,7 +321,7 @@
             // 
             // f8
             // 
-            this.f8.BackColor = System.Drawing.Color.Transparent;
+            this.f8.BackColor = System.Drawing.Color.DimGray;
             this.f8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("f8.BackgroundImage")));
             this.f8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.f8.Location = new System.Drawing.Point(679, 4);
@@ -333,7 +333,7 @@
             // 
             // c8
             // 
-            this.c8.BackColor = System.Drawing.Color.Transparent;
+            this.c8.BackColor = System.Drawing.Color.White;
             this.c8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("c8.BackgroundImage")));
             this.c8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.c8.Location = new System.Drawing.Point(274, 4);
@@ -345,7 +345,7 @@
             // 
             // f1
             // 
-            this.f1.BackColor = System.Drawing.Color.Transparent;
+            this.f1.BackColor = System.Drawing.Color.White;
             this.f1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("f1.BackgroundImage")));
             this.f1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.f1.Location = new System.Drawing.Point(679, 872);
@@ -357,7 +357,7 @@
             // 
             // b1
             // 
-            this.b1.BackColor = System.Drawing.Color.Transparent;
+            this.b1.BackColor = System.Drawing.Color.White;
             this.b1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b1.BackgroundImage")));
             this.b1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b1.Location = new System.Drawing.Point(139, 872);
@@ -370,7 +370,7 @@
             // 
             // g1
             // 
-            this.g1.BackColor = System.Drawing.Color.Transparent;
+            this.g1.BackColor = System.Drawing.Color.DimGray;
             this.g1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("g1.BackgroundImage")));
             this.g1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.g1.Location = new System.Drawing.Point(814, 872);
@@ -383,7 +383,7 @@
             // 
             // b8
             // 
-            this.b8.BackColor = System.Drawing.Color.Transparent;
+            this.b8.BackColor = System.Drawing.Color.DimGray;
             this.b8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b8.BackgroundImage")));
             this.b8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b8.Location = new System.Drawing.Point(139, 4);
@@ -396,7 +396,7 @@
             // 
             // g8
             // 
-            this.g8.BackColor = System.Drawing.Color.Transparent;
+            this.g8.BackColor = System.Drawing.Color.White;
             this.g8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("g8.BackgroundImage")));
             this.g8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.g8.Location = new System.Drawing.Point(814, 4);
@@ -409,7 +409,7 @@
             // 
             // h8
             // 
-            this.h8.BackColor = System.Drawing.Color.Transparent;
+            this.h8.BackColor = System.Drawing.Color.DimGray;
             this.h8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("h8.BackgroundImage")));
             this.h8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.h8.Location = new System.Drawing.Point(949, 4);
@@ -422,7 +422,7 @@
             // 
             // a8
             // 
-            this.a8.BackColor = System.Drawing.Color.Transparent;
+            this.a8.BackColor = System.Drawing.Color.White;
             this.a8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("a8.BackgroundImage")));
             this.a8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.a8.Location = new System.Drawing.Point(4, 4);
@@ -435,7 +435,7 @@
             // 
             // h1
             // 
-            this.h1.BackColor = System.Drawing.Color.Transparent;
+            this.h1.BackColor = System.Drawing.Color.White;
             this.h1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("h1.BackgroundImage")));
             this.h1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.h1.Location = new System.Drawing.Point(949, 872);
@@ -448,7 +448,7 @@
             // 
             // c1
             // 
-            this.c1.BackColor = System.Drawing.Color.Transparent;
+            this.c1.BackColor = System.Drawing.Color.DimGray;
             this.c1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("c1.BackgroundImage")));
             this.c1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.c1.Location = new System.Drawing.Point(274, 872);
@@ -460,7 +460,7 @@
             // 
             // d2
             // 
-            this.d2.BackColor = System.Drawing.Color.Transparent;
+            this.d2.BackColor = System.Drawing.Color.DimGray;
             this.d2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("d2.BackgroundImage")));
             this.d2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.d2.Location = new System.Drawing.Point(409, 748);
@@ -473,7 +473,7 @@
             // 
             // a2
             // 
-            this.a2.BackColor = System.Drawing.Color.Transparent;
+            this.a2.BackColor = System.Drawing.Color.White;
             this.a2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("a2.BackgroundImage")));
             this.a2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.a2.Location = new System.Drawing.Point(4, 748);
@@ -486,7 +486,7 @@
             // 
             // b2
             // 
-            this.b2.BackColor = System.Drawing.Color.Transparent;
+            this.b2.BackColor = System.Drawing.Color.DimGray;
             this.b2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b2.BackgroundImage")));
             this.b2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.b2.Location = new System.Drawing.Point(139, 748);
@@ -499,7 +499,7 @@
             // 
             // c2
             // 
-            this.c2.BackColor = System.Drawing.Color.Transparent;
+            this.c2.BackColor = System.Drawing.Color.White;
             this.c2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("c2.BackgroundImage")));
             this.c2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.c2.Location = new System.Drawing.Point(274, 748);
@@ -512,7 +512,7 @@
             // 
             // f2
             // 
-            this.f2.BackColor = System.Drawing.Color.Transparent;
+            this.f2.BackColor = System.Drawing.Color.DimGray;
             this.f2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("f2.BackgroundImage")));
             this.f2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.f2.Location = new System.Drawing.Point(679, 748);
@@ -525,7 +525,7 @@
             // 
             // g2
             // 
-            this.g2.BackColor = System.Drawing.Color.Transparent;
+            this.g2.BackColor = System.Drawing.Color.White;
             this.g2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("g2.BackgroundImage")));
             this.g2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.g2.Location = new System.Drawing.Point(814, 748);
@@ -538,7 +538,7 @@
             // 
             // h2
             // 
-            this.h2.BackColor = System.Drawing.Color.Transparent;
+            this.h2.BackColor = System.Drawing.Color.DimGray;
             this.h2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("h2.BackgroundImage")));
             this.h2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.h2.Location = new System.Drawing.Point(949, 748);
@@ -551,7 +551,7 @@
             // 
             // a7
             // 
-            this.a7.BackColor = System.Drawing.Color.Transparent;
+            this.a7.BackColor = System.Drawing.Color.DimGray;
             this.a7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("a7.BackgroundImage")));
             this.a7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.a7.Location = new System.Drawing.Point(4, 128);
@@ -564,7 +564,7 @@
             // 
             // b7
             // 
-            this.b7.BackColor = System.Drawing.Color.Transparent;
+            this.b7.BackColor = System.Drawing.Color.White;
             this.b7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b7.BackgroundImage")));
             this.b7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.b7.Location = new System.Drawing.Point(139, 128);
@@ -577,7 +577,7 @@
             // 
             // c7
             // 
-            this.c7.BackColor = System.Drawing.Color.Transparent;
+            this.c7.BackColor = System.Drawing.Color.DimGray;
             this.c7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("c7.BackgroundImage")));
             this.c7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.c7.Location = new System.Drawing.Point(274, 128);
@@ -590,7 +590,7 @@
             // 
             // d7
             // 
-            this.d7.BackColor = System.Drawing.Color.Transparent;
+            this.d7.BackColor = System.Drawing.Color.White;
             this.d7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("d7.BackgroundImage")));
             this.d7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.d7.Location = new System.Drawing.Point(409, 128);
@@ -603,7 +603,7 @@
             // 
             // e7
             // 
-            this.e7.BackColor = System.Drawing.Color.Transparent;
+            this.e7.BackColor = System.Drawing.Color.DimGray;
             this.e7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("e7.BackgroundImage")));
             this.e7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.e7.Location = new System.Drawing.Point(544, 128);
@@ -616,7 +616,7 @@
             // 
             // f7
             // 
-            this.f7.BackColor = System.Drawing.Color.Transparent;
+            this.f7.BackColor = System.Drawing.Color.White;
             this.f7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("f7.BackgroundImage")));
             this.f7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.f7.Location = new System.Drawing.Point(679, 128);
@@ -629,7 +629,7 @@
             // 
             // g7
             // 
-            this.g7.BackColor = System.Drawing.Color.Transparent;
+            this.g7.BackColor = System.Drawing.Color.DimGray;
             this.g7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("g7.BackgroundImage")));
             this.g7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.g7.Location = new System.Drawing.Point(814, 128);
@@ -642,7 +642,7 @@
             // 
             // h7
             // 
-            this.h7.BackColor = System.Drawing.Color.Transparent;
+            this.h7.BackColor = System.Drawing.Color.White;
             this.h7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("h7.BackgroundImage")));
             this.h7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.h7.Location = new System.Drawing.Point(949, 128);
@@ -655,7 +655,7 @@
             // 
             // e2
             // 
-            this.e2.BackColor = System.Drawing.Color.Transparent;
+            this.e2.BackColor = System.Drawing.Color.White;
             this.e2.BackgroundImage = global::Chess.Properties.Resources.whitePawn;
             this.e2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.e2.Location = new System.Drawing.Point(544, 748);
@@ -668,7 +668,7 @@
             // 
             // b3
             // 
-            this.b3.BackColor = System.Drawing.Color.Transparent;
+            this.b3.BackColor = System.Drawing.Color.White;
             this.b3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.b3.Location = new System.Drawing.Point(139, 624);
             this.b3.Name = "b3";
@@ -679,7 +679,7 @@
             // 
             // c3
             // 
-            this.c3.BackColor = System.Drawing.Color.Transparent;
+            this.c3.BackColor = System.Drawing.Color.DimGray;
             this.c3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.c3.Location = new System.Drawing.Point(274, 624);
             this.c3.Name = "c3";
@@ -690,7 +690,7 @@
             // 
             // d3
             // 
-            this.d3.BackColor = System.Drawing.Color.Transparent;
+            this.d3.BackColor = System.Drawing.Color.White;
             this.d3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.d3.Location = new System.Drawing.Point(409, 624);
             this.d3.Name = "d3";
@@ -701,7 +701,7 @@
             // 
             // e3
             // 
-            this.e3.BackColor = System.Drawing.Color.Transparent;
+            this.e3.BackColor = System.Drawing.Color.DimGray;
             this.e3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.e3.Location = new System.Drawing.Point(544, 624);
             this.e3.Name = "e3";
@@ -712,7 +712,7 @@
             // 
             // a4
             // 
-            this.a4.BackColor = System.Drawing.Color.Transparent;
+            this.a4.BackColor = System.Drawing.Color.White;
             this.a4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.a4.Location = new System.Drawing.Point(4, 500);
             this.a4.Name = "a4";
@@ -723,7 +723,7 @@
             // 
             // b4
             // 
-            this.b4.BackColor = System.Drawing.Color.Transparent;
+            this.b4.BackColor = System.Drawing.Color.DimGray;
             this.b4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.b4.Location = new System.Drawing.Point(139, 500);
             this.b4.Name = "b4";
@@ -734,7 +734,7 @@
             // 
             // f3
             // 
-            this.f3.BackColor = System.Drawing.Color.Transparent;
+            this.f3.BackColor = System.Drawing.Color.White;
             this.f3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.f3.Location = new System.Drawing.Point(679, 624);
             this.f3.Name = "f3";
@@ -745,7 +745,7 @@
             // 
             // g3
             // 
-            this.g3.BackColor = System.Drawing.Color.Transparent;
+            this.g3.BackColor = System.Drawing.Color.DimGray;
             this.g3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.g3.Location = new System.Drawing.Point(814, 624);
             this.g3.Name = "g3";
@@ -756,7 +756,7 @@
             // 
             // c4
             // 
-            this.c4.BackColor = System.Drawing.Color.Transparent;
+            this.c4.BackColor = System.Drawing.Color.White;
             this.c4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.c4.Location = new System.Drawing.Point(274, 500);
             this.c4.Name = "c4";
@@ -767,7 +767,7 @@
             // 
             // d4
             // 
-            this.d4.BackColor = System.Drawing.Color.Transparent;
+            this.d4.BackColor = System.Drawing.Color.DimGray;
             this.d4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.d4.Location = new System.Drawing.Point(409, 500);
             this.d4.Name = "d4";
@@ -778,7 +778,7 @@
             // 
             // e4
             // 
-            this.e4.BackColor = System.Drawing.Color.Transparent;
+            this.e4.BackColor = System.Drawing.Color.White;
             this.e4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.e4.Location = new System.Drawing.Point(544, 500);
             this.e4.Name = "e4";
@@ -789,7 +789,7 @@
             // 
             // f4
             // 
-            this.f4.BackColor = System.Drawing.Color.Transparent;
+            this.f4.BackColor = System.Drawing.Color.DimGray;
             this.f4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.f4.Location = new System.Drawing.Point(679, 500);
             this.f4.Name = "f4";
@@ -800,7 +800,7 @@
             // 
             // h4
             // 
-            this.h4.BackColor = System.Drawing.Color.Transparent;
+            this.h4.BackColor = System.Drawing.Color.DimGray;
             this.h4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.h4.Location = new System.Drawing.Point(949, 500);
             this.h4.Name = "h4";
@@ -811,7 +811,7 @@
             // 
             // h3
             // 
-            this.h3.BackColor = System.Drawing.Color.Transparent;
+            this.h3.BackColor = System.Drawing.Color.White;
             this.h3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.h3.Location = new System.Drawing.Point(949, 624);
             this.h3.Name = "h3";
@@ -822,7 +822,7 @@
             // 
             // g4
             // 
-            this.g4.BackColor = System.Drawing.Color.Transparent;
+            this.g4.BackColor = System.Drawing.Color.White;
             this.g4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.g4.Location = new System.Drawing.Point(814, 500);
             this.g4.Name = "g4";
@@ -833,7 +833,7 @@
             // 
             // a6
             // 
-            this.a6.BackColor = System.Drawing.Color.Transparent;
+            this.a6.BackColor = System.Drawing.Color.White;
             this.a6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.a6.Location = new System.Drawing.Point(4, 252);
             this.a6.Name = "a6";
@@ -844,7 +844,7 @@
             // 
             // b6
             // 
-            this.b6.BackColor = System.Drawing.Color.Transparent;
+            this.b6.BackColor = System.Drawing.Color.DimGray;
             this.b6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.b6.Location = new System.Drawing.Point(139, 252);
             this.b6.Name = "b6";
@@ -855,7 +855,7 @@
             // 
             // c6
             // 
-            this.c6.BackColor = System.Drawing.Color.Transparent;
+            this.c6.BackColor = System.Drawing.Color.White;
             this.c6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.c6.Location = new System.Drawing.Point(274, 252);
             this.c6.Name = "c6";
@@ -866,7 +866,7 @@
             // 
             // d6
             // 
-            this.d6.BackColor = System.Drawing.Color.Transparent;
+            this.d6.BackColor = System.Drawing.Color.DimGray;
             this.d6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.d6.Location = new System.Drawing.Point(409, 252);
             this.d6.Name = "d6";
@@ -877,7 +877,7 @@
             // 
             // e6
             // 
-            this.e6.BackColor = System.Drawing.Color.Transparent;
+            this.e6.BackColor = System.Drawing.Color.White;
             this.e6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.e6.Location = new System.Drawing.Point(544, 252);
             this.e6.Name = "e6";
@@ -888,7 +888,7 @@
             // 
             // f6
             // 
-            this.f6.BackColor = System.Drawing.Color.Transparent;
+            this.f6.BackColor = System.Drawing.Color.DimGray;
             this.f6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.f6.Location = new System.Drawing.Point(679, 252);
             this.f6.Name = "f6";
@@ -899,7 +899,7 @@
             // 
             // g6
             // 
-            this.g6.BackColor = System.Drawing.Color.Transparent;
+            this.g6.BackColor = System.Drawing.Color.White;
             this.g6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.g6.Location = new System.Drawing.Point(814, 252);
             this.g6.Name = "g6";
@@ -910,7 +910,7 @@
             // 
             // h6
             // 
-            this.h6.BackColor = System.Drawing.Color.Transparent;
+            this.h6.BackColor = System.Drawing.Color.DimGray;
             this.h6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.h6.Location = new System.Drawing.Point(949, 252);
             this.h6.Name = "h6";
@@ -921,7 +921,7 @@
             // 
             // a5
             // 
-            this.a5.BackColor = System.Drawing.Color.Transparent;
+            this.a5.BackColor = System.Drawing.Color.DimGray;
             this.a5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.a5.Location = new System.Drawing.Point(4, 376);
             this.a5.Name = "a5";
@@ -932,7 +932,7 @@
             // 
             // b5
             // 
-            this.b5.BackColor = System.Drawing.Color.Transparent;
+            this.b5.BackColor = System.Drawing.Color.White;
             this.b5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.b5.Location = new System.Drawing.Point(139, 376);
             this.b5.Name = "b5";
@@ -943,7 +943,7 @@
             // 
             // c5
             // 
-            this.c5.BackColor = System.Drawing.Color.Transparent;
+            this.c5.BackColor = System.Drawing.Color.DimGray;
             this.c5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.c5.Location = new System.Drawing.Point(274, 376);
             this.c5.Name = "c5";
@@ -954,7 +954,7 @@
             // 
             // d5
             // 
-            this.d5.BackColor = System.Drawing.Color.Transparent;
+            this.d5.BackColor = System.Drawing.Color.White;
             this.d5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.d5.Location = new System.Drawing.Point(409, 376);
             this.d5.Name = "d5";
@@ -965,7 +965,7 @@
             // 
             // e5
             // 
-            this.e5.BackColor = System.Drawing.Color.Transparent;
+            this.e5.BackColor = System.Drawing.Color.DimGray;
             this.e5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.e5.Location = new System.Drawing.Point(544, 376);
             this.e5.Name = "e5";
@@ -976,7 +976,7 @@
             // 
             // g5
             // 
-            this.g5.BackColor = System.Drawing.Color.Transparent;
+            this.g5.BackColor = System.Drawing.Color.DimGray;
             this.g5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.g5.Location = new System.Drawing.Point(814, 376);
             this.g5.Name = "g5";
@@ -987,7 +987,7 @@
             // 
             // h5
             // 
-            this.h5.BackColor = System.Drawing.Color.Transparent;
+            this.h5.BackColor = System.Drawing.Color.White;
             this.h5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.h5.Location = new System.Drawing.Point(949, 376);
             this.h5.Name = "h5";
@@ -998,7 +998,7 @@
             // 
             // f5
             // 
-            this.f5.BackColor = System.Drawing.Color.Transparent;
+            this.f5.BackColor = System.Drawing.Color.White;
             this.f5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.f5.Location = new System.Drawing.Point(679, 376);
             this.f5.Name = "f5";
@@ -1009,7 +1009,7 @@
             // 
             // a1
             // 
-            this.a1.BackColor = System.Drawing.Color.Transparent;
+            this.a1.BackColor = System.Drawing.Color.DimGray;
             this.a1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("a1.BackgroundImage")));
             this.a1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.a1.Location = new System.Drawing.Point(4, 872);
@@ -1022,7 +1022,7 @@
             // 
             // a3
             // 
-            this.a3.BackColor = System.Drawing.Color.Transparent;
+            this.a3.BackColor = System.Drawing.Color.DimGray;
             this.a3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.a3.Location = new System.Drawing.Point(4, 624);
             this.a3.Name = "a3";
@@ -1177,10 +1177,11 @@
             // 
             // txtMove
             // 
-            this.txtMove.Location = new System.Drawing.Point(524, 1062);
+            this.txtMove.Location = new System.Drawing.Point(480, 1062);
             this.txtMove.Name = "txtMove";
-            this.txtMove.Size = new System.Drawing.Size(100, 26);
+            this.txtMove.Size = new System.Drawing.Size(184, 26);
             this.txtMove.TabIndex = 22;
+            this.txtMove.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Enter_KeyPress);
             // 
             // btnMove
             // 
@@ -1188,7 +1189,7 @@
             this.btnMove.Name = "btnMove";
             this.btnMove.Size = new System.Drawing.Size(75, 31);
             this.btnMove.TabIndex = 23;
-            this.btnMove.Text = "Move";
+            this.btnMove.Text = "&Move";
             this.btnMove.UseVisualStyleBackColor = true;
             this.btnMove.Click += new System.EventHandler(this.btnMove_Click);
             // 
@@ -1198,7 +1199,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1160, 1110);
+            this.ClientSize = new System.Drawing.Size(1160, 1097);
             this.Controls.Add(this.btnMove);
             this.Controls.Add(this.txtMove);
             this.Controls.Add(this.label17);

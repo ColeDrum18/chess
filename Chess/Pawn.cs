@@ -9,31 +9,31 @@ using System.Windows.Forms;
 
 namespace Chess
 {
-    internal class Pawn
+    internal class Pawn : Piece
     {
-
-        
-        public static string[] movement(string moveTo) 
+        private string moveTo;
+        private Control moveToControl;
+        public Pawn(string moveTo, Control moveToControl)
+        {
+            this.moveTo = moveTo;
+            this.moveToControl = moveToControl;
+        }
+        public override string[] movement() 
         {
             char file = moveTo[0];
-            char lfile = (char)(file - 1);
-            if (file == 'a')
-                lfile = 'a';
-            char rfile = (char)(file + 1);
-            if (file == 'h')
-                rfile = 'h';
+           
             int num = int.Parse(moveTo[1].ToString());
             if (Game.turn % 2 == 1)
             {
                 
                 if (num == 4)
                 {
-                    string[] from = { file + (num - 1).ToString(), file + (num - 2).ToString(), lfile + (num - 1).ToString(), rfile + (num - 1).ToString() };
+                    string[] from = { file + (num - 1).ToString(), file + (num - 2).ToString(), (char)(file -1) + (num - 1).ToString(), (char)(file+1) + (num - 1).ToString() };
                     return from;
                 }
                 else
                 {
-                    string[] from = { file + (num - 1).ToString(), lfile + (num - 1).ToString(), rfile + (num - 1).ToString() };
+                    string[] from = { file + (num - 1).ToString(), (char)(file-1) + (num - 1).ToString(), (char)(file+1) + (num - 1).ToString() };
                     return from;
                 }
             }
@@ -41,31 +41,35 @@ namespace Chess
             {
                 if (num == 5)
                 {
-                    string[] from = { file + (num + 1).ToString(), file + (num + 2).ToString(), lfile + (num + 1).ToString(), rfile + (num + 1).ToString() };
+                    string[] from = { file + (num + 1).ToString(), file + (num + 2).ToString(), (char)(file-1) + (num + 1).ToString(), (char)(file+1) + (num + 1).ToString() };
                     return from;
                 }
                 else
                 {
-                    string[] from = { file + (num + 1).ToString(), lfile + (num + 1).ToString(), rfile + (num + 1).ToString() };
+                    string[] from = { file + (num + 1).ToString(), (char)(file-1) + (num + 1).ToString(), (char)(file+1) + (num + 1).ToString() };
                     return from;
                 }
             }
             
         }
 
-        public static string findControl(Control[] controls, Control moveTo)
+        public override string findControl(Control[] controls)
         {
             string pawn = "";
-            string tag = (string)moveTo.Tag;
+            string tag = (string)moveToControl.Tag;
             int x = controls.Length;
             string color;
+            string opponent;
+            bool two = false;
             if(Game.turn%2 == 1)
             {
                 color = "white";
+                opponent = "black";
             }
             else
             {
                 color = "black";
+                opponent = "white";
             }
             for(int i = 0; i < controls.Length; i++)
             {
@@ -73,12 +77,20 @@ namespace Chess
                 {
                     if(i >= x-2)
                     {
-                        if(moveTo.BackgroundImage == null)
+                        if (Game.EP && (string)controls[0].Tag == opponent+" pawn")
+                        {
+                            Game.EnPassant(controls[0], moveToControl, controls[i]);
+                            Game.EP = false;
+                            pawn = "";
+                            break;
+                        }
+                        if(moveToControl.BackgroundImage == null)
                         {
                             pawn = "";
                         }
                         else if(!tag.Contains(color))
                         {
+                            Game.EP = false;
                             pawn = controls[i].Name;
                             break;
                         }
@@ -87,9 +99,13 @@ namespace Chess
                             pawn = "";
                         }
                     }
-                    else if(moveTo.BackgroundImage == null)
+                    else if(moveToControl.BackgroundImage == null)
                     {
                         pawn = controls[i].Name;
+                        if (i == 1)
+                            two = true;
+                        else
+                            Game.EP = false;
                         break;
                     }
                     else
@@ -97,13 +113,15 @@ namespace Chess
                         pawn = "";
                     }
                 }
-                else if (controls[i] != null)
+            }
+            if(two)
+            {
+                if (controls[0].BackgroundImage != null)
                 {
-                    if (controls[i].BackgroundImage != null && i == 0)
-                    {
-                        break;
-                    }
+                    pawn = "";
                 }
+                else
+                    Game.EP = true;
             }
             return pawn;
         }

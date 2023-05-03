@@ -11,11 +11,18 @@ namespace Chess
     {
         private string moveTo;
         private Control moveToControl;
+        private char fromFile = 'z';
 
         public Queen(string moveTo, Control moveToControl)
         {
             this.moveTo = moveTo;
             this.moveToControl = moveToControl;
+        }
+        public Queen(string moveTo, Control moveToControl, char fromFile)
+        {
+            this.moveTo = moveTo;
+            this.moveToControl = moveToControl;
+            this.fromFile = fromFile;
         }
 
         public override string[] movement()
@@ -54,21 +61,39 @@ namespace Chess
             {
                 if (controls[i] != null && (string)controls[i].Tag == (color + " queen"))
                 {
-                    if (tag == null)
+                    if (fromFile == 'z')
                     {
-                        queen = controls[i].Name;
-                        index = i;
-                        break;
+                        if (tag == null)
+                        {
+                            queen = controls[i].Name;
+                            index = i;
+                        }
+                        else if (!tag.Contains(color))
+                        {
+                            queen = controls[i].Name;
+                            index = i;
+                        }
+                        else
+                        {
+                            queen = "";
+                        }
                     }
-                    else if (!tag.Contains(color))
+                    else if (controls[i].Name[0] == fromFile)
                     {
-                        queen = controls[i].Name;
-                        index = i;
-                        break;
-                    }
-                    else
-                    {
-                        queen = "";
+                        if (tag == null)
+                        {
+                            queen = controls[i].Name;
+                            index = i;
+                        }
+                        else if (!tag.Contains(color))
+                        {
+                            queen = controls[i].Name;
+                            index = i;
+                        }
+                        else
+                        {
+                            queen = "";
+                        }
                     }
                 }
             }

@@ -7,9 +7,16 @@ using System.Windows.Forms;
 
 namespace Chess
 {
-    internal class Bishop
+    internal class Bishop : Piece
     {
-        public static string[] movement(string moveTo)
+        private string moveTo;
+        private Control moveToControl;
+        public Bishop(string moveTo, Control moveToControl)
+        {
+            this.moveTo = moveTo;
+            this.moveToControl = moveToControl;
+        }
+        public override string[] movement()
         {
             Char[] aToH = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
             char file = moveTo[0];
@@ -18,23 +25,14 @@ namespace Chess
                                (char)(file - 1) + (row+1).ToString(), (char)(file - 2) + (row + 2).ToString(), (char)(file - 3) + (row + 3).ToString(), (char)(file - 4) + (row + 4).ToString(), (char)(file - 5) + (row + 5).ToString(), (char)(file - 6) + (row + 6).ToString(), (char)(file - 7) + (row + 7).ToString(),
                                (char)(file+1) + (row-1).ToString(), (char)(file + 2) + (row - 2).ToString(), (char)(file + 3) + (row - 3).ToString(), (char)(file + 4) + (row - 4).ToString(), (char)(file + 5) + (row - 5).ToString(), (char)(file + 6) + (row - 6).ToString(), (char)(file + 7) + (row - 7).ToString(),
                                (char)(file-1) + (row-1).ToString(), (char)(file - 2) + (row - 2).ToString(), (char)(file - 3) + (row - 3).ToString(), (char)(file - 4) + (row - 4).ToString(), (char)(file - 5) + (row - 5).ToString(), (char)(file - 6) + (row - 6).ToString(), (char)(file - 7) + (row - 7).ToString(),};
-            //for(int i = 0; i < from.Length; i++)
-            //{
-              //  Console.WriteLine(from[i]);
-                //if (!aToH.Contains(from[i][0]))
-                //{
-                 //   from[i] = "";
-                //}
-                
-            //}
-
+            
             return from;
         }
 
-        public static string findControl(Control[] controls, Control moveTo)
+        public override string findControl(Control[] controls)
         {
             string bishop = "";
-            string tag = (string)moveTo.Tag;
+            string tag = (string)moveToControl.Tag;
             int x = controls.Length;
             string color;
             int index = 0;

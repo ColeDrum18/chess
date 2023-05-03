@@ -4,12 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Chess
 {
-    internal class Knight
+    internal class Knight : Piece
     {
-        public static string[] movement(string moveTo)
+        private string moveTo;
+        private Control moveToControl;
+
+        public Knight(string moveTo, Control moveToControl)
+        {
+            this.moveTo = moveTo;
+            this.moveToControl = moveToControl;
+        }
+        public override string[] movement()
         {
             Char[] aToH = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
             char file = moveTo[0];
@@ -32,10 +41,17 @@ namespace Chess
             return from;
         }
 
-        public static string findControl(Control[] controls, Control moveTo)
+        public string[] movement(char fromFile)
+        {
+            int row = int.Parse(moveTo[1].ToString());
+            string[] from = { fromFile + (row+1).ToString(), fromFile + (row+1).ToString(), fromFile + (row+2).ToString(), fromFile + (row-2).ToString()};
+            return from;
+        }
+
+        public override string findControl(Control[] controls)
         {
             string knight = "";
-            string tag = (string)moveTo.Tag;
+            string tag = (string)moveToControl.Tag;
             int x = controls.Length;
             string color;
             if (Game.turn % 2 == 1)

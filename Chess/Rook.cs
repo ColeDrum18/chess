@@ -11,11 +11,19 @@ namespace Chess
     {
         private string moveTo;
         private Control moveToControl;
+        private char fromFile = 'z';
 
         public Rook(string moveTo, Control moveToControl)
         {
             this.moveTo = moveTo;
             this.moveToControl = moveToControl;
+        }
+
+        public Rook(string moveTo, Control moveToControl, char fromFile)
+        {
+            this.moveTo = moveTo;
+            this.moveToControl = moveToControl;
+            this.fromFile = fromFile;
         }
 
         public override string[] movement()
@@ -30,6 +38,8 @@ namespace Chess
             
             return from;
         }
+
+        
 
         public override string findControl(Control[] controls)
         {
@@ -50,20 +60,42 @@ namespace Chess
             {
                 if (controls[i] != null && (string)controls[i].Tag == (color + " rook"))
                 {
-                    if (tag == null)
+                    Console.WriteLine(controls[i].Name);
+                    if(fromFile == 'z')
                     {
-                        rook = controls[i].Name;
-                        index = i;
+                        if (tag == null)
+                        {
+                            rook = controls[i].Name;
+                            index = i;
+                        }
+                        else if (!tag.Contains(color))
+                        {
+                            rook = controls[i].Name;
+                            index = i;
+                        }
+                        else
+                        {
+                            rook = "";
+                        }
                     }
-                    else if (!tag.Contains(color))
+                    else if (controls[i].Name[0] == fromFile)
                     {
-                        rook = controls[i].Name;
-                        index = i;
+                        if (tag == null)
+                        {
+                            rook = controls[i].Name;
+                            index = i;
+                        }
+                        else if (!tag.Contains(color))
+                        {
+                            rook = controls[i].Name;
+                            index = i;
+                        }
+                        else
+                        {
+                            rook = "";
+                        }
                     }
-                    else
-                    {
-                        rook = "";
-                    }
+                    
                 }
             }
             int start = 0;
