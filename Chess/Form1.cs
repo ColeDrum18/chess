@@ -372,9 +372,9 @@ namespace Chess
                 if (gameWon)
                 {
                     if (Game.turn % 2 == 1)
-                        txtMove.Text = "White wins";
+                        txtMove.Text = "Black wins";
                     else
-                        txtMove.Text = "Black Wins";
+                        txtMove.Text = "White Wins";
                     txtMove.Enabled = false;
                 }
                 else
