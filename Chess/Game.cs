@@ -74,5 +74,42 @@ namespace Chess
             current.Tag = null;
 
         }
+
+        public static System.Drawing.Bitmap Promote(string moveTo)
+        {
+            System.Drawing.Bitmap image;
+            if(turn % 2 == 1)
+            {
+                if (moveTo[1] == '8')
+                {
+                    image = Resources.whiteQueen;
+                    image.Tag = "white queen";
+                    return image;
+
+                }
+                else
+                {
+                    image = Resources.whitePawn;
+                    image.Tag = "white pawn";
+                    return image;
+                }
+            }
+            else
+            {
+                if (moveTo[1] == '1')
+                {
+                    image = Resources.blackQueen;
+                    image.Tag = "black queen";
+                    return image;
+
+                }
+                else
+                {
+                    image = Resources.blackPawn;
+                    image.Tag = "black pawn";
+                    return image;
+                }
+            }
+        }
     }
 }

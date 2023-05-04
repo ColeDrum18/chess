@@ -29,6 +29,7 @@ namespace Chess
                 {
                     string space = txtMove.Text;
                     var moveTo = this.Controls.Find(txtMove.Text, true);
+                    System.Drawing.Bitmap image = Game.Promote(space);
                     Pawn P = new Pawn(space, moveTo[0]);
                     string[] potential = P.movement();
                     Control[] spots = new Control[potential.Length];
@@ -56,8 +57,8 @@ namespace Chess
                             {
                                 gameWon = true;
                             }
-                            moveTo[0].BackgroundImage = Resources.whitePawn;
-                            moveTo[0].Tag = "white pawn";
+                            moveTo[0].BackgroundImage = image;
+                            moveTo[0].Tag = image.Tag;
                         }
                         else
                         {
@@ -65,8 +66,8 @@ namespace Chess
                             {
                                 gameWon = true;
                             }
-                            moveTo[0].BackgroundImage = Resources.blackPawn;
-                            moveTo[0].Tag = "black pawn";
+                            moveTo[0].BackgroundImage = image;
+                            moveTo[0].Tag = image.Tag;
                         }
                         moveFrom[0].BackgroundImage = null;
                         moveFrom[0].Tag = null;
